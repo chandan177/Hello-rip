@@ -1,0 +1,8 @@
+function creat_youdoc() {
+  var doc = DocumentApp.create('subscribers');
+  doc.getBody().appendParagraph('This is a test');
+  var url= doc.getUrl();
+  doc.getBody().appendParagraph(url);
+  //var results = YouTube.Channels.list('contentDetails', {mine: true});
+  doc.getBody().appendParagraph(results);
+}
